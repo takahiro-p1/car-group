@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     sessions: :sessions }
   root 'top#index'
   get 'show', to: 'top#show'
+  post 'guest_sign_in', to: 'top#guest_sign_in'
   post '/callback' => 'line_bot#callback'
   resources :users, only: [:show, :index]
 

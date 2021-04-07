@@ -5,7 +5,7 @@
       <div class="navbar__sign-in-btn">
         <%= link_to "ログイン", new_user_session_path, class: "btn my-2  bg-light text-top-color" %>
       <div class="navbar__sign-in-btn">
-        <%= link_to "CarGroup Machingとは？", show_path, class: "btn my-2 my-sm-0 bg-light" %>
+        <%= link_to "ゲストユーザーとしてログイン", guest_sign_in_path, class: "btn my-2 my-sm-0 bg-light", method: :post　%>
       </div>
     </nav>
   </div>
@@ -30,6 +30,9 @@
       <%= link_to "ログイン", new_user_session_path, class: "btn text-white" %>
     </div>
     <div class="top-authentication__sign-in-btn m-5">
+      <%= link_to "ゲストユーザーとしてログイン", guest_sign_in_path, class: "btn text-white" ,method: :post %>
+    </div>
+    <div class="top-authentication__car-group-maching-btn m-5">
       <%= link_to "CarGroup Machingとは？", show_path, class: "btn text-white" %>
     </div>
   </div>
