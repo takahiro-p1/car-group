@@ -21,7 +21,7 @@
     </div>
     <% @mygroup_messages.each do |message| %>
       <div class="chat-message__other-user">
-        <% if message.user.profile_image.nil? %>
+        <% if message.user.profile_image.blank? %>
           <div class="chat-room__partner-default-img">
           </div>
         <% else %>
